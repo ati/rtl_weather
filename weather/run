@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# Weather Sensor THGR122N RC ae Channel 1 Temp: 24.4C  75.9F   Humidity: 41%
+# Weather Sensor THGR122N RC ae Channel 1 Temp: 24.4C  75.9F   Humidity: 41%
+
+cd /home/pi
+
+/usr/local/bin/rtl_433 -R 12 2>/dev/null |
+  /home/pi/store_weather_record.py
